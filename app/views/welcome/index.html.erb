@@ -1,96 +1,76 @@
-<div class="navigation">
-	<a href="#">PC</a>
-	<a href="#work">Work</a>
-	<a href="">Connect</a>
-</div>
+<%= render partial: "partials/navigation" %>
+
 <div class="container-fluid">
 	<div class="row">
 		<%= image_tag 'home/pattycreates-header-image.jpg', class: "img-responsive animated pulse hero-image" %>
 	</div>
 </div>
-<div id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-8 col-md-offset-2">
-				<p>
-					As a refugee from Orange County, Patty has settled into a humble apartment on a hill in San Francisco. She has formerly worked at Kissmetrics, Appcelerator and Singly. She has a huge knack for DIY and she's generally the artsy one in most situations. Patty gravitates heavily towards creative strategy, UI/UX, branding, front end development and puppies.
-				</p>
-				<!-- <hr>
-				<h5>Design Ethos</h5>
-				<p>
-					Build for the customer. All ideas should be validated by the users. Branding and marketing design is a byproduct of the user experience of the product. Reduce all points of friction for the users by creating a very streamlined lightweight experience where the design becomes invisible.
-				</p>
-				<hr>
-				<h5>Design Toolkit</h5>
-				<p>
-					Pencil and paper, Micron pens, Photoshop, Illustrator, Sublime, Github, etc..
-				</p>
-				<hr>
-				<h5>Web Technologies</h5>
-				<p>
-					Well versed and proficient in HTML / CSS / SaaS.  Is novice, but competent in Ruby on Rails, Github, JQuery and Javascript. Intermediate knowledge of web technologies and relationships between front end and back end systems.
-				</p> -->
-				<h5 class="center">Her work can be seen below</h5>
-			</div>
-		</div>
+
+<div id="work">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	  <div class="panel panel-default">
+	  	<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4>
+		          Kissmetrics
+		      </h4>
+		    </div>
+		  </a>
+	    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	      <div class="panel-body">
+	      	<%= render partial: "work/kissmetrics" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4>
+		        Appcelerator
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	      <div class="panel-body">
+	        <%= render partial: "work/appcelerator" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		    <div class="panel-heading" role="tab" id="headingThree">
+		      <h4>
+		        Singly
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	      <div class="panel-body">
+	        <%= render partial: "work/singly" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+		    <div class="panel-heading" role="tab" id="headingFour">
+		      <h4>
+		        Taiwan Tourism
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+	      <div class="panel-body">
+	        <%= render partial: "work/taiwan_tourism" %>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </div>
 
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-  	<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-	    <div class="panel-heading" role="tab" id="headingOne">
-	      <h4>
-	          Kissmetrics
-	      </h4>
-	    </div>
-	  </a>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-      	<%= render partial: "work/kissmetrics" %>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-	    <div class="panel-heading" role="tab" id="headingTwo">
-	      <h4>
-	        Appcelerator
-	      </h4>
-    	</div>
-		</a>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        <%= render partial: "work/appcelerator" %>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-	    <div class="panel-heading" role="tab" id="headingThree">
-	      <h4>
-	        Singly
-	      </h4>
-    	</div>
-		</a>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        <%= render partial: "work/singly" %>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-	    <div class="panel-heading" role="tab" id="headingFour">
-	      <h4>
-	        Taiwan Tourism
-	      </h4>
-    	</div>
-		</a>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        <%= render partial: "work/taiwan_tourism" %>
-      </div>
-    </div>
-  </div>
+<div id="about">
+	<%= render partial: "partials/about" %>
+</div>
+
+<div id="connect">
+	<%= render partial: "partials/connect" %>
 </div>

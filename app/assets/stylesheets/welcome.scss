@@ -1,5 +1,23 @@
+ul.navigation {
+	display: block;
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	
+	li {
+		float: left;
+		margin: 15px 10px 0px 10px;
+		display: inline-block;
+		&:hover {
+			color: #E9001C;
+		}
+	}
+}
+
+// Hero Image
 .hero-image {
-	padding: 50px;
+	padding: 30px 50px;
 }
 
 // Styling of the Accordion Headers
