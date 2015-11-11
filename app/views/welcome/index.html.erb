@@ -1,11 +1,51 @@
 <div class="navigation">
 	<a href="#">PC</a>
-	<a href="">About</a>
 	<a href="">Work</a>
-	<a href="">Contact</a>
+	<a href="">Connect</a>
 </div>
 <div class="container-fluid container-padding">
 	<div class="row">
-		<%= image_tag 'home/pattycreates-header-image.jpg', class: "img-responsive" %>
+		<%= image_tag 'home/pattycreates-header-image.jpg', class: "img-responsive animated pulse" %>
 	</div>
+</div>
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-8 col-md-offset-2">
+				<p>
+					As a refugee from Orange County, Patty has settled into a humble apartment on a hill in San Francisco. She has formerly worked at Kissmetrics, Appcelerator and Singly. She has a huge knack for DIY and she's generally the artsy one in most situations. Patty gravitates heavily towards creative strategy, UI/UX, branding, front end development and puppies.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Kissmetrics
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      	<%= render partial: "work/kissmetrics" %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Singly
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <%= render partial: "work/singly" %>
+      </div>
+    </div>
+  </div>
 </div>
