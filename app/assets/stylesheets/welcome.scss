@@ -1,3 +1,38 @@
-.container-padding {
-	padding: 60px;
+.hero-image {
+	padding: 50px;
+}
+
+// Styling of the Accordion Headers
+.panel-group .panel {
+	border-radius: 0;
+	margin: 30px 50px;
+}
+
+.panel {
+	border: 10px solid $color-mystic;
+}
+
+.panel-heading {
+	padding: 20px;
+	h4 {
+		text-align: center;
+		color: $color-cello;
+	}
+}
+
+.panel-body {
+	padding-top: 0px;
+	h5.title {
+		padding-top: 0px;
+		text-align: center;
+	}
+	p.company-description {
+		text-align: center;
+		margin-bottom: 3em;
+	}
+}
+
+p.company-description {
+	font-style: italic;
+	font-weight: 100;
 }
