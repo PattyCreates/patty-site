@@ -1,22 +1,37 @@
-<div class="container">
+<div class="container work-content work-singly">
 	<div class="row">
 		<div class="col-sm-12 col-md-8 col-md-offset-2">
-			<h2>Lead Designer at Singly</h2>
-			<p class="callout">
-				Singly was a social API aggregator that allowed developers to easily access third party data in a uniform API. In other words, a single API.
+			<p class="company-description">
+				Singly was a social API aggregator that allowed developers to easily access third party data in a uniform API. In other words, a single API. Singly was acquired by my next employer Appcelerator in 2013.
 			</p>
+			<h2 class="center title">
+				Lead Designer at Singly
+			</h2>
 			<p>
 				I worked at Singly for a year. It was my first job out of art school, and was my first hard plunge into the tech world.
 			</p>
 			<p>
-				We went through several iterations of the website while trying to figure out the perfect product market fit. Eventually, the company's direction headed toward infiltrating the quantified self market. The image to the right is the most recent website iteration that is currently live at Singly.com.
+				We went through several iterations of the website while trying to figure out the perfect product market fit. Eventually, the company's direction headed toward infiltrating the quantified self market. The image to the right is the most recent website iteration that is currently live at <%= link_to 'Singly.com.', "http://singly.com", target: "_blank" %>
 			</p>
 			<p>
 				The technical graph on the bottom of the page was my favorite piece of this site. The infrastructure is highly technical, but the design of the architecture information is very easy to digest and visually appealing.
 			</p>
-			<p>
-				Singly was acquired by my next employer Appcelerator in 2013.
-			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-10 col-md-offset-1">
+			<div class="browser-ui">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'singly/singly-website-one-page-scroll.jpg', class: "img-responsive" %>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-md-offset-1">
+			<%= image_tag 'singly/singly-hackathons-infographic.jpg', class: "img-responsive browser-ui" %>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<%= image_tag 'singly/singly-angelhack-board.jpg', class: "img-responsive browser-ui" %>
 		</div>
 	</div>
 </div>

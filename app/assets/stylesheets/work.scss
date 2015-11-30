@@ -3,7 +3,44 @@
 .work-content  {
 	padding-bottom: 40px;
 }
+
 //Images
 img.work {
 	margin: 20px auto;
+}
+
+.browser-ui,
+img.browser-ui {
+	border: 1px solid $color-mystic;
+	margin: 20px auto;
+}
+
+.nav-work-circles {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: inline-block;
+	.circle {
+		float: left;
+		margin-left: 8px;
+		border-radius: 50%;
+		border: 1px solid $color-mystic;
+		display: block;
+		height: 13px;
+		width: 13px;
+		background-color: rgba($color-mystic,.25);
+	}
+}
+
+//hilights
+.work-singly a {
+	color: #00a6e4;
+	font-weight: bold;
+	&:hover {
+		color: #008ECA;
+	}
+}
+
+.work-maker a {
+
 }
