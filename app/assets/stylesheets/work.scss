@@ -32,15 +32,19 @@ img.browser-ui {
 	}
 }
 
-//hilights
-.work-singly a {
-	color: #00a6e4;
-	font-weight: bold;
+.callout-link {
+	font-size: 1.25em;
+	border-top: 2px solid $color-dark-pink;
+	border-bottom: 2px solid $color-dark-pink;
+	width: 100%;
 	&:hover {
-		color: #008ECA;
+		color: $color-jazzberry-jam;
+		border-top: 2px solid $color-jazzberry-jam;
+		border-bottom: 2px solid $color-jazzberry-jam;
 	}
-}
-
-.work-maker a {
-
+	i {
+		float: right;
+		display: inline-block;
+		margin: 5px 0px 5px 8px;
+	}
 }

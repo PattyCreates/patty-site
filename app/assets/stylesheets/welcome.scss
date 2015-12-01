@@ -51,11 +51,9 @@ ul.navigation {
 	}
 	p.company-description {
 		text-align: center;
-		margin-bottom: 3em;
+		font-style: italic;
+		font-weight: 100;
+		margin-bottom: 4em;
+		margin-top: 0px;
 	}
-}
-
-p.company-description {
-	font-style: italic;
-	font-weight: 100;
 }
