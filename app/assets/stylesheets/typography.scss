@@ -58,7 +58,7 @@ p.callout {
 	font-style: italic;
 	font-weight: 300;
 	margin-left: -29px;
-	border-left: 8px solid $color-dark-pink;
+	border-left: 8px solid $color-pink-sherbert;
 }
 
 p {
@@ -72,7 +72,7 @@ a {
 	font-weight: bold;
 	&:link {
 		text-decoration: none;
-		color: $color-dark-pink;
+		color: $color-pink-sherbert;
 		font-weight: bold;
 	}
 	&:hover {
@@ -85,6 +85,6 @@ a {
 		color: $color-jazzberry-jam;
 	}
 	&:visited {
-		color: $color-dark-pink;
+		color: $color-pink-sherbert;
 	}
 }

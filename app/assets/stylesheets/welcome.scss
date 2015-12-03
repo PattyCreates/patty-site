@@ -1,5 +1,9 @@
 body {
 	background-color: rgb(250,250,250);
+	::selection {
+		background-color: $color-pink-sherbert;
+		color: #ffffff;
+	}
 }
 
 ul.navigation {
