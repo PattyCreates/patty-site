@@ -1,0 +1,27 @@
+#about {
+	height:30px;
+}
+
+.about {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px ;
+	padding-right: 30px;
+	position: relative;
+	box-shadow: 3px 3px 21px rgba($color-cello,.1);
+}
+
+.self-image {
+	background: $color-cello url("/assets/home/patty-creates-about.jpg") center top;
+	border-bottom: 34px solid $color-pink-sherbert;
+	background-size: cover;
+	height: 100%;
+	float: left;
+	position: absolute;
+	z-index: -10px;
+	width: 47%;
+}
+
+.about-copy {
+	padding-bottom: 5em;
+}

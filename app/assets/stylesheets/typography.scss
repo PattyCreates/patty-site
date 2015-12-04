@@ -1,0 +1,90 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+p.center,
+img.center {
+ 	text-align: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+h2 {
+	font-size: 4em;
+	margin-top: 1.3em;
+	margin-bottom: .8em;
+	font-family: 'Playfair Display', serif;
+}
+
+h3 {
+	font-weight: 700;
+	color: $color-cello;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	letter-spacing: .25em;
+	font-weight: 700;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: .4em;
+}
+
+p.callout {
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-left: 21px;
+	padding-top: 10px;
+	padding-bottom: 13px;
+	font-style: italic;
+	font-weight: 300;
+	margin-left: -29px;
+	border-left: 8px solid $color-pink-sherbert;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1.25em;
+	margin: 1em auto;
+	color: $color-cello;
+}
+
+a {
+	font-weight: bold;
+	&:link {
+		text-decoration: none;
+		color: $color-pink-sherbert;
+		font-weight: bold;
+	}
+	&:hover {
+		color: $color-jazzberry-jam;
+		text-decoration: none;
+		border-bottom: 1px solid $color-mystic;
+	}
+	&:active {
+		text-decoration: none;
+		color: $color-jazzberry-jam;
+	}
+	&:visited {
+		color: $color-pink-sherbert;
+	}
+}

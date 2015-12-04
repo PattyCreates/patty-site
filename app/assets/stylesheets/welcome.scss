@@ -1,3 +1,68 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background-color: rgb(250,250,250);
+	::selection {
+		background-color: $color-pink-sherbert;
+		color: #ffffff;
+	}
+}
+
+ul.navigation {
+	display: block;
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	
+	li {
+		float: left;
+		margin: 15px 10px 0px 10px;
+		display: inline-block;
+		&:hover {
+			color: #E9001C;
+		}
+	}
+}
+
+// Hero Image
+.hero-image {
+	padding: 30px 50px;
+}
+
+// Styling of the Accordion Headers
+.panel-group .panel {
+	border-radius: 0;
+	margin: 30px 50px;
+}
+
+.panel {
+	border: 10px solid $color-black-haze;
+}
+
+.panel-heading {
+	padding: 20px;
+	h4 {
+		text-align: center;
+		color: $color-cello;
+	}
+}
+
+.panel-body {
+	padding-top: 0px;
+	background-color: white;
+	h5.title {
+		padding-top: 0px;
+		text-align: center;
+	}
+	p.company-description {
+		text-align: center;
+		font-style: italic;
+		font-weight: 100;
+		margin-top: 0px;
+	}
+}
+
+hr {
+	border-top: 4px solid $color-black-haze;
+	margin: 40px auto;
+	opacity: .75;
+}

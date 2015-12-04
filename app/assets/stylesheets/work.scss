@@ -1,0 +1,54 @@
+//Work
+//Container
+.work-content  {
+	padding-bottom: 40px;
+}
+
+//Images
+img.work {
+	margin: 20px auto;
+}
+
+.browser-ui,
+img.browser-ui {
+	border: 1px solid $color-mystic;
+	margin: 20px auto;
+}
+
+.nav-work-circles {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: inline-block;
+	.circle {
+		float: left;
+		margin-left: 8px;
+		border-radius: 50%;
+		border: 1px solid $color-mystic;
+		display: block;
+		height: 13px;
+		width: 13px;
+		background-color: rgba($color-mystic,.25);
+	}
+}
+
+.callout-link {
+	font-size: 1.25em;
+	border-top: 2px solid $color-pink-sherbert;
+	border-bottom: 2px solid $color-pink-sherbert;
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	&:hover {
+		color: $color-jazzberry-jam;
+		border-top: 2px solid $color-jazzberry-jam;
+		border-bottom: 2px solid $color-jazzberry-jam;
+	}
+	i {
+		float: right;
+		display: inline-block;
+		margin: 5px 0px 5px 8px;
+	}
+}

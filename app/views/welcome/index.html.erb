@@ -1,2 +1,104 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<%= render partial: "partials/navigation" %>
+
+<div class="container-fluid">
+	<div class="row">
+		<%= image_tag 'home/pattycreates-header-image.jpg', class: "img-responsive animated pulse hero-image" %>
+	</div>
+</div>
+
+<div id="work">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4>
+		        Kissmetrics
+		      </h4>
+		    </div>
+		  </a>
+	    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+	      <div class="panel-body">
+	      	<%= render partial: "work/kissmetrics" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4>
+		        Appcelerator
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	      <div class="panel-body">
+	        <%= render partial: "work/appcelerator" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		    <div class="panel-heading" role="tab" id="headingThree">
+		      <h4>
+		        Singly
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	      <div class="panel-body">
+	        <%= render partial: "work/singly" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+		    <div class="panel-heading" role="tab" id="headingFour">
+		      <h4>
+		        Taiwan Tourism
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+	      <div class="panel-body">
+	        <%= render partial: "work/taiwan_tourism" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		    <div class="panel-heading" role="tab" id="headingFive">
+		      <h4>
+		        DIY Projects
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+	      <div class="panel-body">
+	        <%= render partial: "work/maker" %>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	  	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+		    <div class="panel-heading" role="tab" id="headingSix">
+		      <h4>
+		        Art
+		      </h4>
+	    	</div>
+			</a>
+	    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+	      <div class="panel-body">
+	        <%= render partial: "work/art" %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div id="about">
+</div>
+<%= render partial: "partials/about" %>
+
+<div id="connect">
+	<%= render partial: "partials/connect" %>
+</div>
