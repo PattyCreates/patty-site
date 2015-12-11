@@ -26,20 +26,33 @@ ul.navigation {
 // Hero Image
 .hero-image {
 	padding: 30px 50px;
+	@media (max-width: $screen-sm-min) {
+		padding: 21px;
+	}
 }
 
 // Styling of the Accordion Headers
 .panel-group .panel {
 	border-radius: 0;
 	margin: 30px 50px;
+	@media (max-width: $screen-sm-min) {
+		margin: 21px;
+	}
 }
 
 .panel {
-	border: 10px solid $color-black-haze;
+	border: 8px solid $color-black-haze;
+	@media (max-width: $screen-sm-min) {
+		border: 5px solid $color-black-haze;
+	}
 }
 
 .panel-heading {
 	padding: 20px;
+	@media (max-width: $screen-sm-min) {
+		padding: 13px;
+	}
+
 	h4 {
 		text-align: center;
 		color: $color-cello;
@@ -49,15 +62,21 @@ ul.navigation {
 .panel-body {
 	padding-top: 0px;
 	background-color: white;
+	@media (max-width: $screen-sm-min) {
+		padding: 13px;
+	}
+
 	h5.title {
 		padding-top: 0px;
 		text-align: center;
 	}
+
 	p.company-description {
 		text-align: center;
 		font-style: italic;
 		font-weight: 100;
 		margin-top: 0px;
+		margin-bottom: 3em;
 	}
 }
 
@@ -65,4 +84,8 @@ hr {
 	border-top: 4px solid $color-black-haze;
 	margin: 40px auto;
 	opacity: .75;
+	@media (max-width: $screen-sm-min) {
+		border-top: 2px solid $color-black-haze;
+		margin: 21px auto;
+	}
 }
