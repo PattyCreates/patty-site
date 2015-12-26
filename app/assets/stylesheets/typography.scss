@@ -79,12 +79,10 @@ p.callout {
 	padding-bottom: 13px;
 	font-style: italic;
 	font-weight: 300;
-	margin-left: -23px;
 	border-left: 3px solid $color-pink-sherbert;
 	@media (max-width: $screen-sm-min) {
 		border-left: 2px solid $color-pink-sherbert;
 		padding-left: 13px;
-		margin-left: -15px;
 	}
 }
 
