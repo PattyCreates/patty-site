@@ -9,6 +9,9 @@
 	padding-right: 30px;
 	position: relative;
 	box-shadow: 3px 3px 21px rgba($color-cello,.1);
+	@media (max-width: $screen-md-min) {
+		padding-right: 0px;
+	}
 	@media (max-width: $screen-sm-min) {
 		margin-left: 21px;
 		margin-right: 21px;
