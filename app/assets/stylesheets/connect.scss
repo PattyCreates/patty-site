@@ -6,5 +6,18 @@
 }
 	
 .social {
+	padding-bottom: 80px;
 	margin: inherit auto;
+	text-align: center;
+	font-size: large;
+	@media (max-width: $screen-sm-min) {
+		font-size: inherit;
+		padding-bottom: 40px;
+	}
+	.fa-stack {
+		margin: 5px;
+		@media (max-width: $screen-sm-min) {
+			margin: 2px;
+		}
+	}
 }
