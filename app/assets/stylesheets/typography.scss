@@ -27,6 +27,9 @@ h2 {
 	@media (max-width: $screen-md-min) {
 		font-size: 3em;
 	}
+	@media (max-width: $screen-xs-min) {
+		font-size: 2.5em;
+	}
 }
 
 h3 {

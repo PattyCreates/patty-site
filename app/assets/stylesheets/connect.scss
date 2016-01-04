@@ -19,5 +19,8 @@
 		@media (max-width: $screen-md-min) {
 			margin: 2px;
 		}
+		@media (max-width: $screen-xs-min) {
+			margin: 0px;
+		}
 	}
 }
