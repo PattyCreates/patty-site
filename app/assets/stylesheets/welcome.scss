@@ -8,30 +8,75 @@ body {
 
 ul.navigation {
 	display: block;
-	width: 310px;
+	width: 269px;
+	padding-left: 0px;
+	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	list-style-type: none;
-	
+	@media (max-width: $screen-sm-min) {
+		width: 234px;
+	}
+
+	a {
+		color: $color-cello;
+	}
+
 	li {
 		float: left;
-		margin: 15px 10px 0px 10px;
+		margin: 0px 10px;
 		display: inline-block;
+		text-align: center;
+		border-bottom: 1px solid rgb(250,250,250);
 		&:hover {
-			color: #E9001C;
+			color: $color-cello;
+			text-decoration: none;
+			border-bottom: 1px solid $color-mystic;
+		}
+
+		h5 {
+			margin-bottom: 5px;
 		}
 	}
 }
 
 // Hero Image
+.hero-container {
+	margin-top: 60px;
+	@media (max-width: $screen-sm-min) {
+		margin-top: 0px;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-top: 0px;
+	}
+}
+
 .hero-image {
 	padding: 30px 50px;
+	margin-top: -100px;
+	margin-left: auto;
+	margin-right: auto;
 	@media (max-width: $screen-sm-min) {
 		padding: 21px;
 	}
 }
 
+h2.hero-title {
+	color: $color-pink-sherbert;
+	position: relative;
+	z-index: 1;
+	@media (max-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
 // Styling of the Accordion Headers
+#work {
+	max-width: 1540px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .panel-group .panel {
 	border-radius: 0;
 	margin: 30px 50px;
