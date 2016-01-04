@@ -17,8 +17,6 @@
 	box-shadow: 3px 3px 21px rgba($color-cello,.1);
 	@media (max-width: $screen-md-min) {
 		padding-right: 0px;
-	}
-	@media (max-width: $screen-sm-min) {
 		margin-left: 21px;
 		margin-right: 21px;
 	}
@@ -35,8 +33,8 @@
 	width: 47%;
 	@media (max-width: $screen-md-min) {
 		width: 100%;
-		height: 440px;
-		border-bottom: 8px solid $color-pink-sherbert;
+		height: 450px;
+		border-bottom: 5px solid $color-pink-sherbert;
 		&:before {
 	    content: '';
 			position: absolute;
@@ -49,13 +47,11 @@
 		}
 	}
 	@media (max-width: $screen-sm-min) {
-		width: 100%;
-		height: 350px;
-		border-bottom: 5px solid $color-pink-sherbert;
-	}
-	@media (max-width: $screen-sm-min) {
-		height: 280px;
+		height: 340px;
 		border-bottom: 2px solid $color-pink-sherbert;
+	}
+	@media (max-width: $screen-xs-min) {
+		height: 280px;
 	}
 }
 
@@ -63,10 +59,15 @@
 	padding-bottom: 5em;
 	@media (max-width: $screen-md-min) {
 		margin-top: 320px;
+		padding-left: 33px;
+		padding-right: 33px;
 	}
 	@media (max-width: $screen-sm-min) {
+		margin-top: 260px;
+		padding-bottom: 2em;
+	}
+	@media (max-width: $screen-xs-min) {
 		margin-top: 200px;
-		padding-bottom: 1em;
 	}
 
 	h2 {

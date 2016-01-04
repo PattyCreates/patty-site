@@ -1,7 +1,7 @@
 .connect {
-	@media (max-width: $screen-sm-min) {
-		padding-left: 26px;
-		padding-right: 26px;
+	@media (max-width: $screen-md-min) {
+		padding-left: 39px;
+		padding-right: 39px;
 	}
 }
 	
@@ -10,13 +10,13 @@
 	margin: inherit auto;
 	text-align: center;
 	font-size: large;
-	@media (max-width: $screen-sm-min) {
+	@media (max-width: $screen-md-min) {
 		font-size: inherit;
 		padding-bottom: 40px;
 	}
 	.fa-stack {
 		margin: 5px;
-		@media (max-width: $screen-sm-min) {
+		@media (max-width: $screen-md-min) {
 			margin: 2px;
 		}
 	}
