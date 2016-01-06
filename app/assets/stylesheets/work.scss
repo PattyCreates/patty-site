@@ -4,9 +4,29 @@
 	padding-bottom: 40px;
 }
 
+.group-vertical-margin {
+	margin: 30px auto;
+}
+
 //Images
+
 img.work {
 	margin: 20px auto;
+	display: inline-block;
+}
+
+img.work-dropshadow {
+	box-shadow: 3px 3px 21px rgba(59, 82, 97, 0.3);
+}
+
+img.pullup {
+	position: relative;
+	margin-top: -5%;
+}
+
+img.top-image {
+	z-index: 1;
+	position: relative;
 }
 
 //Instagram 
@@ -17,6 +37,7 @@ img.work {
 //Browser
 .browser-ui {
 	background-color: rgb(250,250,250);
+	display: inline-block;
 }
 
 .browser-ui,

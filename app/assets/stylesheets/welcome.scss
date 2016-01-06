@@ -81,7 +81,6 @@ h2.hero-title {
 	color: $color-pink-sherbert;
 	position: relative;
 	z-index: 1;
-	font-style: italic;
 	@media (max-width: $screen-sm-min) {
 		display: none;
 	}
@@ -146,11 +145,25 @@ h2.hero-title {
 }
 
 hr {
-	border-top: 4px solid $color-black-haze;
-	margin: 40px auto;
-	opacity: .75;
+	border: 2px solid $color-pink-sherbert;
+	border-radius: 2px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	max-width: 50px;
 	@media (max-width: $screen-md-min) {
-		border-top: 2px solid $color-black-haze;
-		margin: 21px auto;
+		margin: 3em auto;
+		max-width: 30px;
+	}
+}
+
+.about {
+	hr {
+		margin: 2em auto 2em 0;
+	}
+}
+
+.panel {	
+	hr {
+		margin: 4em auto;
 	}
 }
