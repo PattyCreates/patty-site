@@ -19,16 +19,59 @@ img.work-dropshadow {
 	box-shadow: 3px 3px 21px rgba(59, 82, 97, 0.3);
 }
 
-img.pullup {
-	position: relative;
-	margin-top: -5%;
-}
-
 img.top-image {
 	z-index: 1;
 	position: relative;
 }
 
+//Image Alignments for layovers
+img.pull-up-5 {
+	position: relative;
+	margin-top: -5%;
+	@media (max-width: $screen-sm-min) {
+		margin-top: -10%;
+	}
+}
+
+img.pull-down-30 {
+	margin-top: 30%;
+}
+
+img.pull-down-15 {
+	margin-top: 15%;
+}
+
+img.pull-down-10 {
+	margin-top: 10%;
+}
+
+img.pull-left-5 {
+	position: relative;
+	margin-left: -5%;
+	@media (max-width: $screen-md-min) {
+		margin-left: -8%;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-left: -10%;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin-left: -12%;
+	}
+}
+
+img.pull-right-5 {
+	position: relative;
+	margin-left: 5%;
+	@media (max-width: $screen-md-min) {
+		margin-left: 8%;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-left: 10%;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin-left: 12%;
+	}
+}
 //Instagram 
 .work {
 	margin: 20px auto;
@@ -36,13 +79,13 @@ img.top-image {
 
 //Browser
 .browser-ui {
-	background-color: rgb(250,250,250);
+	background-color: $color-mystic;
 	display: inline-block;
 }
 
 .browser-ui,
 img.browser-ui {
-	border: 1px solid $color-mystic;
+	border: 2px solid $color-black-haze;
 	margin: 20px auto;
 
 }
@@ -61,7 +104,7 @@ img.browser-ui {
 		float: left;
 		margin-left: 8px;
 		border-radius: 50%;
-		border: 1px solid $color-mystic;
+		border: 2px solid $color-black-haze;
 		display: block;
 		height: 13px;
 		width: 13px;
