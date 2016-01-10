@@ -1,0 +1,58 @@
+//Image Alignments for layovers
+img.pull-up-5 {
+	position: relative;
+	margin-top: -5%;
+	@media (max-width: $screen-sm-min) {
+		margin-top: -10%;
+	}
+}
+
+img.pull-down-30 {
+	margin-top: 30%;
+}
+
+img.pull-down-15 {
+	margin-top: 15%;
+}
+
+img.pull-down-10 {
+	margin-top: 10%;
+}
+
+img.pull-left-5 {
+	position: relative;
+	margin-left: -5%;
+	@media (max-width: $screen-md-min) {
+		margin-left: -8%;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-left: -10%;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin-left: -12%;
+	}
+}
+
+img.pull-right-5 {
+	position: relative;
+	margin-left: 5%;
+	@media (max-width: $screen-md-min) {
+		margin-left: 8%;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-left: 10%;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin-left: 12%;
+	}
+}
+
+//waypoints
+
+.to-be-animated {
+	opacity: 0;
+}
+
+.to-be-animated.animated {
+	opacity: 1;
+}

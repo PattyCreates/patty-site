@@ -24,12 +24,16 @@
 	<div class="group-vertical-margin">
 		<div class="row">
 			<div class="col-sm-12 col-md-3 col-md-offset-1">
-				<%= image_tag 'taiwan/taiwan-wrap-live.jpg', class: "img-responsive work pull-right-5 work-dropshadow top-image  animated fadeInDown" %>
-				<%= image_tag 'taiwan/taiwan-king.jpg', class: "img-responsive work work-dropshadow top-image pull-right-5  animated fadeInRight" %>
-				<%= image_tag 'taiwan/taiwan-trolley.jpg', class: "img-responsive work pull-right-5 work-dropshadow top-image  animated fadeInUp" %>
+				<div id="taiwanA" class="to-be-animated">
+					<%= image_tag 'taiwan/taiwan-wrap-live.jpg', class: "img-responsive work pull-right-5 work-dropshadow top-image" %>
+				</div>
+				<div id="ani-taiwan-b" class="to-be-animated">
+					<%= image_tag 'taiwan/taiwan-king.jpg', class: "img-responsive work work-dropshadow top-image pull-right-5" %>
+				</div>
+				<%= image_tag 'taiwan/taiwan-trolley.jpg', class: "img-responsive work pull-right-5 work-dropshadow top-image to-be-animated ani-taiwan-3" %>
 			</div>
 			<div class="col-sm-12 col-md-7">
-				<%= image_tag 'taiwan/taiwan-kong.jpg', class: "img-responsive work work-dropshadow pull-down-15 pull-left-5 top-image animated fadeInRight" %>
+				<%= image_tag 'taiwan/taiwan-kong.jpg', class: "img-responsive work work-dropshadow pull-down-15 pull-left-5 top-image to-be-animated ani-taiwan-4" %>
 			</div>
 		</div>
 	</div>
