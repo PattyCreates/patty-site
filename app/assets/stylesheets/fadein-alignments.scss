@@ -13,6 +13,15 @@ img.pull-down-30 {
 
 img.pull-down-15 {
 	margin-top: 15%;
+	@media (max-width: $screen-md-min) {
+		margin-top: 25%;
+	}
+	@media (max-width: $screen-sm-min) {
+		margin-top: 19%;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin-top: 15%;
+	}
 }
 
 img.pull-down-10 {

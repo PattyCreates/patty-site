@@ -6,6 +6,12 @@
 
 .group-vertical-margin {
 	margin: 30px auto;
+	@media (max-width: $screen-sm-min) {
+		margin: 25px auto;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin: 20px auto;
+	}
 }
 
 //Images
@@ -17,6 +23,12 @@ img.work {
 
 img.work-dropshadow {
 	box-shadow: 3px 3px 21px rgba(59, 82, 97, 0.3);
+	@media (max-width: $screen-sm-min) {
+		box-shadow: 1px 1px 15px rgba(59, 82, 97, 0.4);
+	}
+	@media (max-width: $screen-xs-min) {
+		box-shadow: 1px 1px 8px rgba(59, 82, 97, 0.4);
+	}
 }
 
 img.top-image {
@@ -40,7 +52,10 @@ img.top-image {
 img.browser-ui {
 	border: 2px solid $color-black-haze;
 	margin: 20px auto;
-
+	@media (max-width: $screen-md-min) {
+		margin: 1em auto;
+		border: 1px solid $color-black-haze;
+	}
 }
 
 .nav-work-circles {
@@ -49,6 +64,10 @@ img.browser-ui {
 	padding-bottom: 3px;
 	display: inline-block;
 	@media (max-width: $screen-sm-min) {
+		padding-top: 5px;
+		padding-bottom: 2px;
+	}
+	@media (max-width: $screen-xs-min) {
 		padding-top: 5px;
 		padding-bottom: 2px;
 	}
@@ -66,6 +85,12 @@ img.browser-ui {
 			height: 8px;
 			width: 8px;
 			margin-left: 5px;
+		}
+		@media (max-width: $screen-xs-min) {
+			border: 1px solid $color-black-haze;
+			height: 5px;
+			width: 5px;
+			background-color: $color-black-haze;
 		}
 	}
 }

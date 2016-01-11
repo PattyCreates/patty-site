@@ -3,6 +3,10 @@
 		padding-left: 39px;
 		padding-right: 39px;
 	}
+	@media (max-width: $screen-xs-min) {
+		padding-left: 34px;
+		padding-right: 34px;
+	}
 }
 	
 .social {

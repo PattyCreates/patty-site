@@ -21,6 +21,10 @@
 		margin-left: 21px;
 		margin-right: 21px;
 	}
+	@media (max-width: $screen-xs-min) {
+		margin-left: 21px;
+		margin-right: 21px;
+	}
 }
 
 .self-image {
@@ -69,6 +73,8 @@
 	}
 	@media (max-width: $screen-xs-min) {
 		margin-top: 200px;
+		padding-left: 28px;
+		padding-right: 28px;
 	}
 
 	h2 {
