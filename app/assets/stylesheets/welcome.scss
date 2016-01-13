@@ -11,6 +11,11 @@ body {
 	max-width: 1200px;
 }
 
+#header-wrap {
+	display: inline-block;
+	height: inherit;
+}
+
 ul.navigation {
 	display: block;
 	width: 269px;
