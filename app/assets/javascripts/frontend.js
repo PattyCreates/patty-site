@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function() {
 
 //   $(document).on("collapsibleexpand", "[data-role=collapsible]", function () {
 //     var position = $(this).offset().top;
