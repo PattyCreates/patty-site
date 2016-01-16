@@ -1,22 +1,58 @@
-$(document).ready(function(){
-  var VERTICAL_PADDING = 30;
+$(window).load(function() {
   
-  //Accordian
-  $('.panel').on('show.bs.collapse', function () {
-    var $targetPanel = $(this);
-    var $lastPanel = $('.collapse.in').closest('.panel');
-    var panelList = $('.panel').toArray();
-    var topOffset = $(this).offset().top;
+  var VERTICAL_PADDING = 30;
+  var headerWrapHeight = $("#header-wrap").outerHeight();
+  var panelDefaultHeight = $(".panel-default-1").height() + 38;
+  var heightForPanel1 = $(".panel-default-1").offset().top;
+  var heightForPanel2 = ($(".panel-default-1").offset().top + panelDefaultHeight);
+  var heightForPanel3 = ($(".panel-default-2").offset().top + panelDefaultHeight);
+  var heightForPanel4 = ($(".panel-default-3").offset().top + panelDefaultHeight);
+  var heightForPanel5 = ($(".panel-default-4").offset().top + panelDefaultHeight);
+  var heightForPanel6 = ($(".panel-default-5").offset().top + panelDefaultHeight);
+  var heightForPanel7 = ($(".panel-default-6").offset().top + panelDefaultHeight);
 
-    if (panelList.indexOf($lastPanel[0]) > -1 && panelList.indexOf($lastPanel[0]) < panelList.indexOf($targetPanel[0])) {
-      var height = $lastPanel.outerHeight();
-      var closedHeight = $targetPanel.outerHeight();
-      $('html,body').scrollTop(topOffset - (height - closedHeight) - VERTICAL_PADDING);
-      // $('html,body').animate({scrollTop: topOffset - (height - closedHeight) - VERTICAL_PADDING}, 500);
-    } else {
-      $('html,body').animate({scrollTop: topOffset - VERTICAL_PADDING}, 500);
-    }
+  $(".accordion-1").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel1),
+    }, 350);
   });
+
+  $(".accordion-2").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel2),
+    }, 350);
+  });
+
+  $(".accordion-3").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel3),
+    }, 350);
+  });
+
+  $(".accordion-4").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel4),
+    }, 350);
+  });
+
+  $(".accordion-5").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel5),
+    }, 350);
+  });
+
+  $(".accordion-6").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel6),
+    }, 350);
+  });
+
+  $(".accordion-7").click(function() {
+    $('html, body').animate({
+      scrollTop: (heightForPanel7),
+    }, 350);
+  });
+
 
   //Waypoints and animate.css
   //Taiwan
