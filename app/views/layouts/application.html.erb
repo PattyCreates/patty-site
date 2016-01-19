@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PattyCreates</title>
   <meta name="viewport" content="width=device-width" />
+  <title>PattyCreates</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Artist/ Designer/ Maker. A creative who gravitate towards strategy, UI/UX, branding, front end coding, DIY, art and puppies." %>">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,300,300italic,800italic,800,700italic,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
