@@ -4,42 +4,33 @@
 			<p>
 				The first time I had a <em>'aha!'</em> moment in respect to my artistic ability was when I was four years old and drew a spitting image of Donald Duck <em>(pun intended, oh yes!)</em>. Later in life, I worked at Disneyland working as a portrait artist. This served as a loose fundraiser for my art schooling.
 			</p>
+			<div class="group-vertical-margin">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<%= image_tag 'art/art-james.jpg', class: "img-responsive work" %>
+						<h5 class="center">
+							Saint James Franco &bull; 18" x 24"
+						</h5>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<%= image_tag 'art/art-still-life.jpg', class: "img-responsive work" %>
+						<h5 class="center">
+							Still Life &bull; 24" x 18"
+						</h5>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<hr>
-	<div class="row">
-		<div class="col-sm-12">
-			<h4 class="center">Charcoal Drawings</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12 col-md-5 col-md-offset-1">
-			<%= image_tag 'art/art-james.jpg', class: "img-responsive work" %>
-			<h5 class="center">
-				Saint James Franco &bull; 18" x 24"
-			</h5>
-		</div>
-		<div class="col-sm-12 col-md-5">
-			<%= image_tag 'art/art-still-life.jpg', class: "img-responsive work" %>
-			<h5 class="center">
-				Still Life &bull; 24" x 18"
-			</h5>
-		</div>
-	</div>
-	<hr>
+
+
 	<div class="row">
 		<div class="col-sm-12 col-md-8 col-md-offset-2">
-			<h4 class="center">
-				Etcetera Posters
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12 col-md-5 col-md-offset-1">
-			<%= image_tag 'art/hitchcock-murder.jpg', class: "img-responsive work" %>
-		</div>
-		<div class="col-sm-12 col-md-5">
-			<%= image_tag 'art/hitchcock-birds.jpg', class: "img-responsive work" %>
+			<%= link_to "https://dribbble.com/PattyCreates", target: "blank" do %>
+				<button class="callout-link">
+					View More on Dribbble <i class="fa fa-arrow-right"></i>
+				</button>
+			<% end %>
 		</div>
 	</div>
 </div>
