@@ -6,29 +6,34 @@
 			</p>
 			<div class="group-vertical-margin">
 				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<%= image_tag 'art/art-giraffe.jpg', class: "img-responsive work" %>
+					</div>
+					<div class="col-xs-12 col-sm-4 hidden-xs">
+						<%= image_tag 'art/art-eagle.jpg', class: "img-responsive work" %>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<%= image_tag 'art/art-rabbit.jpg', class: "img-responsive work" %>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-xs-12 col-sm-6">
 						<%= image_tag 'art/art-james.jpg', class: "img-responsive work" %>
-						<h5 class="center">
-							Saint James Franco &bull; 18" x 24"
-						</h5>
 					</div>
-					<div class="col-xs-12 col-sm-6">
+					<div class="hidden-xs col-sm-6">
 						<%= image_tag 'art/art-still-life.jpg', class: "img-responsive work" %>
-						<h5 class="center">
-							Still Life &bull; 24" x 18"
-						</h5>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 
 	<div class="row">
 		<div class="col-sm-12 col-md-8 col-md-offset-2">
-			<%= link_to "https://dribbble.com/PattyCreates", target: "blank" do %>
+			<%= link_to "https://www.instagram.com/explore/tags/pattycreates/", target: "blank" do %>
 				<button class="callout-link">
-					View More on Dribbble <i class="fa fa-arrow-right"></i>
+					View More on Instagram <i class="fa fa-arrow-right"></i>
 				</button>
 			<% end %>
 		</div>
