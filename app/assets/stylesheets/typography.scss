@@ -81,6 +81,11 @@ p {
 	}
 	a {
 		opacity: 1;
+		&:hover {
+			color: $color-jazzberry-jam;
+			text-decoration: none;
+			border-bottom: 1px solid $color-mystic;
+		}
 	}
 }
 
@@ -114,7 +119,7 @@ a {
 	&:hover {
 		color: $color-jazzberry-jam;
 		text-decoration: none;
-		border-bottom: 1px solid $color-mystic;
+		border-bottom: 1px solid $color-black-haze;
 	}
 	&:active {
 		text-decoration: none;

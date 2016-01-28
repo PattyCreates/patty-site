@@ -75,7 +75,7 @@ img.browser-ui {
 		padding-bottom: 2px;
 	}
 	@media (max-width: $screen-xs-min) {
-		padding-top: 5px;
+		padding-top: -2px;
 		padding-bottom: 2px;
 	}
 	
@@ -89,12 +89,12 @@ img.browser-ui {
 		width: 13px;
 		background-color: white;
 		@media (max-width: $screen-sm-min) {
+			border: 1px solid $color-black-haze;
 			height: 8px;
 			width: 8px;
 			margin-left: 5px;
 		}
 		@media (max-width: $screen-xs-min) {
-			border: 1px solid $color-black-haze;
 			height: 5px;
 			width: 5px;
 			background-color: $color-black-haze;
@@ -104,19 +104,20 @@ img.browser-ui {
 
 .callout-link {
 	font-size: 1.25em;
-	letter-spacing: .02em;
+	letter-spacing: .04em;
 	border: 2px solid $color-pink-sherbert;
 	width: 100%;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	margin-top: 21px;
 	margin-bottom: 21px;
-	border-radius: 25px;
-	background-color: white;
+	border-radius: 5px;
+	color: white;
+	background-color: $color-pink-sherbert;
 	&:hover {
-		color: $color-jazzberry-jam;
-		border-top: 2px solid $color-jazzberry-jam;
-		border-bottom: 2px solid $color-jazzberry-jam;
+		color: white;
+		border: 2px solid $color-jazzberry-jam;
+		background-color: $color-jazzberry-jam;
 	}
 	@media (max-width: $screen-md-min) {
 		font-size: 1em;
