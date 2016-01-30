@@ -56,8 +56,20 @@ $(window).load(function() {
 
   //Waypoints and animate.css
   $('.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    console.log("triggered");
     e.stopPropagation();
     $.waypoints('refresh');
+
+    //Singly
+    $('img.singlyA').waypoint(function() {
+      $('img.singlyA').addClass('animated fadeInLeft');
+    }, { offset: '50%' });
+    $('img.singlyB').waypoint(function() {
+      $('img.singlyB').addClass('animated fadeInDown');
+    }, { offset: '50%' });
+    $('img.singlyC').waypoint(function() {
+      $('img.singlyC').addClass('animated fadeInRight');
+    }, { offset: '50%' });
 
     //Taiwan
     $('img.taiwanA').waypoint(function() {
@@ -72,7 +84,7 @@ $(window).load(function() {
     $('img.taiwanD').waypoint(function() {
       $('img.taiwanD').addClass('animated fadeInUp');
     }, { offset: '50%' });
-    
+
     //SF Pet Project
     $('img.sfPetProjectA').waypoint(function() {
       $('img.sfPetProjectA').addClass('animated fadeInLeft');
@@ -83,16 +95,17 @@ $(window).load(function() {
 
     //Maker
     $('img.makerA').waypoint(function() {
-      $('img.makerA').addClass('animated fadeInDown');
+      $('img.makerA').addClass('animated fadeInUp');
     }, { offset: '50%' });
     $('img.makerB').waypoint(function() {
-      $('img.makerB').addClass('animated fadeInDown');
+      $('img.makerB').addClass('animated fadeInUp');
     }, { offset: '50%' });
     $('img.makerC').waypoint(function() {
       $('img.makerC').addClass('animated fadeInRight');
     }, { offset: '50%' });
     $('img.makerD').waypoint(function() {
-      $('img.makerD').addClass('animated fadeInUp');
+      $('img.makerD').addClass('animated fadeInDown');
     }, { offset: '50%' });
+
   });
 });
