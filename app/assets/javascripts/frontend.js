@@ -60,6 +60,20 @@ $(window).load(function() {
     e.stopPropagation();
     $.waypoints('refresh');
 
+    //Appcelerator
+    $('img.appceleratorA').waypoint(function() {
+      $('img.appceleratorA').addClass('animated fadeInDown');
+    }, { offset: '50%' });
+    $('img.appceleratorB').waypoint(function() {
+      $('img.appceleratorB').addClass('animated fadeInUp');
+    }, { offset: '50%' });
+    $('img.appceleratorC').waypoint(function() {
+      $('img.appceleratorC').addClass('animated fadeInUp');
+    }, { offset: '50%' });
+    $('img.appceleratorD').waypoint(function() {
+      $('img.appceleratorD').addClass('animated fadeInRight');
+    }, { offset: '50%' });
+
     //Singly
     $('img.singlyA').waypoint(function() {
       $('img.singlyA').addClass('animated fadeInLeft');
