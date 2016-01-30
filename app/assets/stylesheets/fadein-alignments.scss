@@ -4,6 +4,12 @@
 
 img.pull-up-66 {
 	margin-top: -66%;
+	@media (max-width: $screen-sm-min) {
+		margin-top: -30%;
+	}
+	@media (max-width: $screen-xs-min) {
+		margin-top: -30%;
+	}
 }
 
 img.pull-up-30 {
