@@ -73,6 +73,14 @@ $(window).load(function() {
       $('img.taiwanD').addClass('animated fadeInUp');
     }, { offset: '50%' });
     
+    //SF Pet Project
+    $('img.sfPetProjectA').waypoint(function() {
+      $('img.sfPetProjectA').addClass('animated fadeInLeft');
+    }, { offset: '50%' });
+    $('img.sfPetProjectB').waypoint(function() {
+      $('img.sfPetProjectB').addClass('animated fadeInDown');
+    }, { offset: '50%' });
+
     //Maker
     $('img.makerA').waypoint(function() {
       $('img.makerA').addClass('animated fadeInDown');
