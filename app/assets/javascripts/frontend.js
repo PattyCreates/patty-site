@@ -55,10 +55,10 @@ $(window).load(function() {
 
 
   //Waypoints and animate.css
-  //Taiwan
   $('.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
     e.stopPropagation();
     $.waypoints('refresh');
+
     //Taiwan
     $('img.taiwanA').waypoint(function() {
       $('img.taiwanA').addClass('animated fadeInLeft');
@@ -71,6 +71,20 @@ $(window).load(function() {
     }, { offset: '50%' });
     $('img.taiwanD').waypoint(function() {
       $('img.taiwanD').addClass('animated fadeInUp');
+    }, { offset: '50%' });
+    
+    //Maker
+    $('img.makerA').waypoint(function() {
+      $('img.makerA').addClass('animated fadeInDown');
+    }, { offset: '50%' });
+    $('img.makerB').waypoint(function() {
+      $('img.makerB').addClass('animated fadeInDown');
+    }, { offset: '50%' });
+    $('img.makerC').waypoint(function() {
+      $('img.makerC').addClass('animated fadeInRight');
+    }, { offset: '50%' });
+    $('img.makerD').waypoint(function() {
+      $('img.makerD').addClass('animated fadeInUp');
     }, { offset: '50%' });
   });
 });
