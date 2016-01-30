@@ -55,71 +55,86 @@ $(window).load(function() {
 
 
   //Waypoints and animate.css
-  $('.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
-    console.log("triggered");
-    e.stopPropagation();
-    $.waypoints('refresh');
 
-    //Appcelerator
+  //Appcelerator
+  $('#collapseTwo.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    e.stopPropagation();
+    $.waypoints('refresh');    
     $('img.appceleratorA').waypoint(function() {
       $('img.appceleratorA').addClass('animated fadeInDown');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.appceleratorB').waypoint(function() {
       $('img.appceleratorB').addClass('animated fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.appceleratorC').waypoint(function() {
       $('img.appceleratorC').addClass('animated fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.appceleratorD').waypoint(function() {
       $('img.appceleratorD').addClass('animated fadeInRight');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
+  });
 
-    //Singly
+  //Singly
+  $('#collapseThree.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    e.stopPropagation();
+    $.waypoints('refresh'); 
     $('img.singlyA').waypoint(function() {
       $('img.singlyA').addClass('animated fadeInLeft');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.singlyB').waypoint(function() {
       $('img.singlyB').addClass('animated fadeInDown');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.singlyC').waypoint(function() {
       $('img.singlyC').addClass('animated fadeInRight');
-    }, { offset: '50%' });
-
-    //Taiwan
+    }, { offset: '75%' });
+  });
+  
+  //Taiwan
+  $('#collapseFour.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    e.stopPropagation();
+    $.waypoints('refresh');
     $('img.taiwanA').waypoint(function() {
       $('img.taiwanA').addClass('animated fadeInLeft');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.taiwanB').waypoint(function() {
       $('img.taiwanB').addClass('animated fadeInLeft');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.taiwanC').waypoint(function() {
       $('img.taiwanC').addClass('animated fadeInRight');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.taiwanD').waypoint(function() {
       $('img.taiwanD').addClass('animated fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
 
-    //SF Pet Project
+  });
+
+  //SF Pet Project
+  $('#collapseFive.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    e.stopPropagation();
+    $.waypoints('refresh');
     $('img.sfPetProjectA').waypoint(function() {
       $('img.sfPetProjectA').addClass('animated fadeInLeft');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.sfPetProjectB').waypoint(function() {
       $('img.sfPetProjectB').addClass('animated fadeInDown');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
+  });
 
-    //Maker
+  //Maker
+  $('#collapseSeven.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    e.stopPropagation();
+    $.waypoints('refresh');  
     $('img.makerA').waypoint(function() {
-      $('img.makerA').addClass('animated fadeInUp');
-    }, { offset: '50%' });
+      $('img.makerA').addClass('animated fadeInDown');
+    }, { offset: '75%' });
     $('img.makerB').waypoint(function() {
       $('img.makerB').addClass('animated fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.makerC').waypoint(function() {
       $('img.makerC').addClass('animated fadeInRight');
-    }, { offset: '50%' });
+    }, { offset: '75%' });
     $('img.makerD').waypoint(function() {
       $('img.makerD').addClass('animated fadeInDown');
-    }, { offset: '50%' });
-
+    }, { offset: '75%' });
   });
 });
