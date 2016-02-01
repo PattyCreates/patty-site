@@ -1,3 +1,16 @@
+//Refresh script on browser resize
+
+$(function($){
+  var windowWidth = $(window).width();
+  $(window).resize(function() {
+    if(windowWidth != $(window).width()){
+      location.reload();
+      return;
+    }
+  });
+});
+
+//Accordion section
 $(window).load(function() {
   
   var VERTICAL_PADDING = 30;
