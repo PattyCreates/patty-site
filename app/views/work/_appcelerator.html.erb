@@ -24,12 +24,21 @@
 		</div>
 	</div>
 	<div class="group-vertical-margin">
-		<div class="row">
+		<div class="row visible-xs">
+			<div class="col-xs-12">
+				<div class="browser-ui">
+					<%= render partial: "partials/browser_circles" %>
+					<%= image_tag 'appcelerator/appc-maturity-assessment.jpg', class: "img-responsive work" %>
+				</div>
+				<%= image_tag 'appcelerator/appc-mbaas-wp.jpg', class: "img-responsive work" %>
+			</div>
+		</div>
+		<div class="row hidden-xs">
 			<div class="col-xs-12 col-sm-9 col-sm-offset-0 col-md-8 col-md-offset-1">
 				<%= image_tag 'appcelerator/appc-maturity-assessment.jpg', class: "img-responsive work-dropshadow appceleratorA to-be-animated work" %>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<div class="col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-2">
 				<%= image_tag 'appcelerator/appc-page-platform.jpg', class: "img-responsive work-dropshadow pull-up-30 appceleratorB to-be-animated top-image work" %>
 			</div>
