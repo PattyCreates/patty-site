@@ -82,6 +82,10 @@
 			color: white;
 			text-align: center;
 			margin-bottom: 1.8em;
+			margin-top: 0px;
+		}
+		@media (max-width: $screen-lg-min) {
+			margin-top: 1.3em;
 		}
 	}
 }

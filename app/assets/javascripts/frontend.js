@@ -1,29 +1,33 @@
-//Refresh script on browser resize
-
-$(function($){
-  var windowWidth = $(window).width();
-  $(window).resize(function() {
-    if(windowWidth != $(window).width()){
-      location.reload();
-      return;
-    }
-  });
-});
-
-//Accordion section
 $(window).load(function() {
   
-  var VERTICAL_PADDING = 30;
-  var headerWrapHeight = $("#header-wrap").outerHeight();
-  var panelDefaultHeight = $(".panel-default-1").height() + 38;
-  var heightForPanel1 = $(".panel-default-1").offset().top;
-  var heightForPanel2 = ($(".panel-default-1").offset().top + panelDefaultHeight);
-  var heightForPanel3 = ($(".panel-default-2").offset().top + panelDefaultHeight);
-  var heightForPanel4 = ($(".panel-default-3").offset().top + panelDefaultHeight);
-  var heightForPanel5 = ($(".panel-default-4").offset().top + panelDefaultHeight);
-  var heightForPanel6 = ($(".panel-default-5").offset().top + panelDefaultHeight);
-  var heightForPanel7 = ($(".panel-default-6").offset().top + panelDefaultHeight);
+  //Accordion section 
 
+  //Accordion Variables
+  var verticalPadding = 45;
+  var panelDefaultHeight = $(".panel-default-1").height() + verticalPadding;
+  var heightForPanel1 = ($(".panel-default-1").offset().top - 15);
+  var heightForPanel2 = (heightForPanel1 + panelDefaultHeight);
+  var heightForPanel3 = (heightForPanel2 + panelDefaultHeight);
+  var heightForPanel4 = (heightForPanel3 + panelDefaultHeight);
+  var heightForPanel5 = (heightForPanel4 + panelDefaultHeight);
+  var heightForPanel6 = (heightForPanel5 + panelDefaultHeight);
+  var heightForPanel7 = (heightForPanel6 + panelDefaultHeight);
+
+  // Updated variables on browser resize
+  $(window).resize(function() {
+    var verticalPadding = 61;
+    var panelDefaultHeight = $(".panel-heading").height() + verticalPadding;
+    console.log(panelDefaultHeight,"resized panelDefaultHeight");
+    heightForPanel1 = $(".panel-default-1").offset().top - 15;
+    heightForPanel2 = (heightForPanel1 + panelDefaultHeight);
+    heightForPanel3 = (heightForPanel2 + panelDefaultHeight);
+    heightForPanel4 = (heightForPanel3 + panelDefaultHeight);
+    heightForPanel5 = (heightForPanel4 + panelDefaultHeight);
+    heightForPanel6 = (heightForPanel5 + panelDefaultHeight);
+    heightForPanel7 = (heightForPanel6 + panelDefaultHeight);
+  });
+
+  //Accordion Functions
   $(".accordion-1").click(function() {
     $('html, body').animate({
       scrollTop: (heightForPanel1),
