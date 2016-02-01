@@ -26,7 +26,7 @@
       var heightForPanel6 = (heightForPanel5 + panelDefaultHeight);
       var heightForPanel7 = (heightForPanel6 + panelDefaultHeight);
 
-      Updated variables on browser resize
+      //Updated variables on browser resize
       $(window).resize(function() {
         panelDefaultHeight = $(".panel-heading").height() + verticalPadding;
         heightForPanel1 = $(".panel-default-1").offset().top - 15;
