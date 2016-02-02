@@ -3,13 +3,13 @@
     
     ///Mixpanel
     mixpanel.init("new token", { your: "config" }, "library_name");
-    mixpanel.track_links(".accordion-1", "Clicked Kissmetrics");
-    mixpanel.track_links(".accordion-2", "Clicked Appcelerator");
-    mixpanel.track_links(".accordion-3", "Clicked Singly");
-    mixpanel.track_links(".accordion-4", "Clicked Taiwan");
-    mixpanel.track_links(".accordion-5", "Clicked SF Pet Project");
-    mixpanel.track_links(".accordion-6", "Clicked Art");
-    mixpanel.track_links(".accordion-7", "Clicked Maker");
+    // mixpanel.track_links(".accordion-1", "Clicked Kissmetrics");
+    // mixpanel.track_links(".accordion-2", "Clicked Appcelerator");
+    // mixpanel.track_links(".accordion-3", "Clicked Singly");
+    // mixpanel.track_links(".accordion-4", "Clicked Taiwan");
+    // mixpanel.track_links(".accordion-5", "Clicked SF Pet Project");
+    // mixpanel.track_links(".accordion-6", "Clicked Art");
+    // mixpanel.track_links(".accordion-7", "Clicked Maker");
 
     //Defining padding on breakpoints
     function scrollTopOfAccordion () {
