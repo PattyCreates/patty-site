@@ -1,6 +1,16 @@
 (function($, document, window, viewport){
   $(window).load(function() {
     
+    ///Mixpanel
+    mixpanel.init("new token", { your: "config" }, "library_name");
+    mixpanel.track_links(".accordion-1", "Clicked .accordion-1");
+    mixpanel.track_links(".accordion-2", "Clicked .accordion-2");
+    mixpanel.track_links(".accordion-3", "Clicked .accordion-3");
+    mixpanel.track_links(".accordion-4", "Clicked .accordion-4");
+    mixpanel.track_links(".accordion-5", "Clicked .accordion-5");
+    mixpanel.track_links(".accordion-6", "Clicked .accordion-6");
+    mixpanel.track_links(".accordion-7", "Clicked .accordion-7");
+
     //Defining padding on breakpoints
     function scrollTopOfAccordion () {
 
