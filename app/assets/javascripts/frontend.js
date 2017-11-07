@@ -97,18 +97,6 @@
           scrollTop: (heightForPanel5),
         }, 350);
       });
-
-      $(".accordion-6").click(function() {
-        $('html, body').animate({
-          scrollTop: (heightForPanel6),
-        }, 350);
-      });
-
-      $(".accordion-7").click(function() {
-        $('html, body').animate({
-          scrollTop: (heightForPanel7),
-        }, 350);
-      });
     };
 
     scrollTopOfAccordion();
@@ -168,34 +156,5 @@
 
     });
 
-    //SF Pet Project
-    $('#collapseFive.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
-      e.stopPropagation();
-      $.waypoints('refresh');
-      $('img.sfPetProjectA').waypoint(function() {
-        $('img.sfPetProjectA').addClass('animated fadeInLeft');
-      }, { offset: '75%' });
-      $('img.sfPetProjectB').waypoint(function() {
-        $('img.sfPetProjectB').addClass('animated fadeInDown');
-      }, { offset: '75%' });
-    });
-
-    //Maker
-    $('#collapseSeven.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
-      e.stopPropagation();
-      $.waypoints('refresh');  
-      $('img.makerA').waypoint(function() {
-        $('img.makerA').addClass('animated fadeInDown');
-      }, { offset: '75%' });
-      $('img.makerB').waypoint(function() {
-        $('img.makerB').addClass('animated fadeInUp');
-      }, { offset: '75%' });
-      $('img.makerC').waypoint(function() {
-        $('img.makerC').addClass('animated fadeInRight');
-      }, { offset: '75%' });
-      $('img.makerD').waypoint(function() {
-        $('img.makerD').addClass('animated fadeInDown');
-      }, { offset: '75%' });
-    });
   });
 })(jQuery, document, window, ResponsiveBootstrapToolkit);
