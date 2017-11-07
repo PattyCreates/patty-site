@@ -22,17 +22,14 @@ img.img-responsive {
 
 ul.navigation {
 	display: block;
-	width: 269px;
+	width: 50px + 57px + 80px + 60px;
 	padding-left: 0px;
 	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	list-style-type: none;
 	@media (max-width: $screen-md-min) {
-		width: 191px;
-	}
-	@media (max-width: $screen-xs-min) {
-		width: 194px;
+		width: 35px + 40px + 56px + 60px;
 	}
 
 	a {
