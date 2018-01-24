@@ -11,6 +11,25 @@
     // mixpanel.track_links(".accordion-6", "Clicked Art");
     // mixpanel.track_links(".accordion-7", "Clicked Maker");
 
+    //Navigation Scrolls
+    $(".work-nav").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#work").offset().top
+      }, 500);
+    });
+
+    $(".about-nav").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#about").offset().top
+      }, 800);
+    });
+
+    $(".connect-nav").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#connect").offset().top
+      }, 1200);
+    });
+
     //Defining padding on breakpoints
     function scrollTopOfAccordion () {
 
@@ -76,18 +95,6 @@
       $(".accordion-5").click(function() {
         $('html, body').animate({
           scrollTop: (heightForPanel5),
-        }, 350);
-      });
-
-      $(".accordion-6").click(function() {
-        $('html, body').animate({
-          scrollTop: (heightForPanel6),
-        }, 350);
-      });
-
-      $(".accordion-7").click(function() {
-        $('html, body').animate({
-          scrollTop: (heightForPanel7),
         }, 350);
       });
     };
@@ -172,6 +179,5 @@
         $('img.makerD').addClass('animated fadeInDown');
       }, { offset: '75%' });
     });
-
   });
 })(jQuery, document, window, ResponsiveBootstrapToolkit);

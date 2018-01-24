@@ -16,6 +16,5 @@
 //= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap-toolkit.min
-//= require smoothscroll
 //= require waypoints.min
 //= require frontend
