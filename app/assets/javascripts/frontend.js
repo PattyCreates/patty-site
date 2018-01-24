@@ -98,7 +98,7 @@
     //Waypoints and animate.css
 
     //Appcelerator
-    $('#collapseTwo.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    $('#collapseThree.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
       e.stopPropagation();
       $.waypoints('refresh');    
       $('img.appceleratorA').waypoint(function() {
@@ -116,7 +116,7 @@
     });
 
     //Singly
-    $('#collapseThree.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    $('#collapseFour.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
       e.stopPropagation();
       $.waypoints('refresh'); 
       $('img.singlyA').waypoint(function() {
@@ -131,7 +131,7 @@
     });
     
     //Taiwan
-    $('#collapseFour.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    $('#collapseFive.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
       e.stopPropagation();
       $.waypoints('refresh');
       $('img.taiwanA').waypoint(function() {
@@ -149,8 +149,8 @@
 
     });
 
-    //SF Pet Project
-    $('#collapseFive.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+    // Art
+    $('#collapseSix.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
       e.stopPropagation();
       $.waypoints('refresh');
       $('img.sfPetProjectA').waypoint(function() {
@@ -159,12 +159,6 @@
       $('img.sfPetProjectB').waypoint(function() {
         $('img.sfPetProjectB').addClass('animated fadeInDown');
       }, { offset: '75%' });
-    });
-
-    //Maker
-    $('#collapseSeven.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
-      e.stopPropagation();
-      $.waypoints('refresh');  
       $('img.makerA').waypoint(function() {
         $('img.makerA').addClass('animated fadeInDown');
       }, { offset: '75%' });
@@ -178,5 +172,6 @@
         $('img.makerD').addClass('animated fadeInDown');
       }, { offset: '75%' });
     });
+
   });
 })(jQuery, document, window, ResponsiveBootstrapToolkit);
