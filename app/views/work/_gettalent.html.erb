@@ -4,10 +4,6 @@
 			<p class="company-description">
 				getTalent, a web recruiting software by Dice, is a lightweight ATS and a heavyweight CRM with marketing automation powers. 
 			</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
 			<p>
 				getTalent was releasing a V2 of their application because they were migrating their software to a new stack. They had a rough internal skeleton of the new front-end application, but it wasn’t refined in interaction or appearance. Therefore, I was hired as a consultant to redesign the UX / UI of the MVP of their V2 application.
 			</p>
@@ -17,7 +13,9 @@
 			<p class="callout">
 				That said, it was a very aggressive sprint schedule, and the user flows, styles, libraries, UX and UI were all done simultaneously. 
 			</p>
+
 			<hr>
+
 			<h4 class="center">
 				Styles Update
 			</h4>
@@ -28,79 +26,92 @@
 				Based off of their existing Material framework, I created a base style guide mini-site that the developers were able to import all SCSS variables and styles directly into the application. It was understood that the styles document would be malleable, so it was quite heavy in CSS modifiers and SCSS variables and mixins. I also created a component library including details such as loading states, facets, forms, blank states, animation states, and more.
 			</p>
 			<div class="group-vertical-margin">
-				<div class="browser-ui">
-					<%= render partial: "partials/browser_circles" %>
-					<%= image_tag 'kissmetrics/km-track-people.jpg', class: "img-responsive" %>
-				</div>
+				<p class="callout">
+					Collage of multiple images go here.
+				</p>
 			</div>
+
 			<hr>
+
 			<h4 class="center">
 				UX Rehaul
 			</h4>
+
 			<p>
 				There were 4 key pieces of the UX redesign including: the navigation, directories, pipeline creation and candidate profiles.
 			</p>
 			<p>		
 				In the research phase, I conducted internal interviews, user research, competitor analysis and multiple whiteboard sessions to submit an evaluation of usability flaws, design inconsistencies, and opportunities. Then I drafted a stronger sitemap to better organize user flows. This site structure rehaul was the ground for the rest of the site for a more consistent and simple UX plan.
 			</p>
-			<div class="group-vertical-margin">
-				<div class="browser-ui">
-					<%= image_tag 'kissmetrics/kissmetrics-blog-reader.jpg', class: "img-responsive" %>
-				</div>
-			</div>
+
+			<p class="callout">
+				IMAGE OF SITE MAP
+			</p>
+
 			<p>
 				The navigation was refined during the user flow planning. After a few brainstorms and lo-fi prototypes, the general structure of what was necessary began to take shape. Each navigation item required an overview and directory to jump off from. The structure led to the basic site layout that then helped better organize the information globally thereon.
 			</p>
 			<p>
-				The Director of Product also wanted to emphasize numerical values as the beginning of reporting. So, a low friction way of providing some metrics was making tab groups larger and more prominent. The pronounced tabs then became a design pattern throughout. 
+				The Director of Product also wanted to emphasize numerical values as the beginning of reporting. So, a low friction way of providing some metrics was making tab groups larger and more prominent. The pronounced tabs then became a design pattern throughout.
 			</p>
-
-			<div class="group-vertical-margin">
-				<div class="browser-ui">
-					<%= image_tag 'kissmetrics/kissmetrics-blog-reader.jpg', class: "img-responsive" %>
-				</div>
-			</div>
-
+		</div>
+	</div>
+	<div class="row group-vertical-margin hidden-xs">
+		<div class="col-xs-12 col-sm-5 col-md-4">
+			<%= image_tag 'getTalent/pattycreates-gettalent-pipeline-directory.png', class: "sfPetProjectA img-responsive work-dropshadow pull-right-5 to-be-animated pull-down-15", alt:"getTalent Directory Screenshot - Pattycreates - UI / UX" %>
+			<%= image_tag 'getTalent/pattycreates-gettalent-pipeline-directory.png', class: "sfPetProjectA img-responsive work-dropshadow pull-right-5 to-be-animated pull-down-15", alt:"getTalent Directory Screenshot - Pattycreates - UI / UX" %>
+		</div>
+		<div class="col-xs-12 col-sm-7 col-md-8">	
+			<%= image_tag 'getTalent/pattycreates-gettalent-pipeline-directory.png', class: "sfPetProjectB img-responsive pull-left-5 work-dropshadow to-be-animated pull-down-15", alt:"getTalent Directory Screenshot - Pattycreates - UI / UX" %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-8 col-md-offset-2">
 			<p>
 				The next main feature to redesign was the Create a Pipeline, which — at the time — had a very odd filtering interaction that wasn't clear to users. It was also inundated with several facets which made it overwhelming to filter quickly and efficiently.
 			</p>
 			<p>
-				We considered different types of logic but maintained that it was and filter logic for simplicity’s sake. So, the clear solution was to categorize the facets so a user can filter faster, easier, and more thoroughly. 
+				We considered different types of logic but maintained that it was and filter logic for simplicity’s sake. So, the clear solution was to categorize the facets so a user can filter faster, easier, and more thoroughly.
 			</p>
-
-			<div class="group-vertical-margin">
-				<div class="browser-ui">
-					<%= image_tag 'kissmetrics/kissmetrics-blog-reader.jpg', class: "img-responsive" %>
-				</div>
-			</div>
-
+		</div>
+	</div>
+	<div class="row group-vertical-margin hidden-xs">
+		<p class="callout">
+			IMAGE OF Create a Pipeline
+		</p>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-8 col-md-offset-2">
 			<p>
-				The categories from Create a Pipeline continued into the candidate profiles. The candidate profile had to support engagement metrics, resume support, and CRM abilities. The solution was to tab these pieces to fall in line with the global interaction of the site which was being built. 
+				The styles and categories from Create a Pipeline continued into the candidate profiles. The candidate profile had to support engagement metrics, resume support, and CRM abilities. The solution was to tab these pieces to fall in line with the global interaction of the site which was being built.
 			</p>
-
-			<div class="group-vertical-margin">
-				<div class="browser-ui">
-					<%= image_tag 'kissmetrics/kissmetrics-blog-reader.jpg', class: "img-responsive" %>
-				</div>
-			</div>
+		</div>
+	</div>
+	<div class="row group-vertical-margin hidden-xs">
+		<div class="col-xs-12 col-sm-6 col-md-5">
+			<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-resume.png', class: "sfPetProjectA img-responsive work-dropshadow pull-right-5 to-be-animated  pull-down-15", alt:"getTalent Candidate Profile Resume Screenshot - Pattycreates - UI / UX" %>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-7">
+			<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-admin.png', class: "sfPetProjectB img-responsive pull-left-5 work-dropshadow to-be-animated", alt:"getTalent Candidate Profile Administrative Screenshot - Pattycreates - UI / UX" %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-8 col-md-offset-2">
 
 			<hr>
+
 			<h4 class="center">
 				After The Initial Redesign
 			</h4>
 			<p>
 				I worked on several projects with getTalent as a contractor. The team treated me as a part time employee over the course of several months. I redesigned other features and introduced several new core features to the site.
 			</p>
-			<div class="group-vertical-margin">
-				<div class="browser-ui">
-					<%= image_tag 'kissmetrics/kissmetrics-blog-reader.jpg', class: "img-responsive" %>
-				</div>
-			</div>
-			
-			<p>
-				Aside from design responsibilities, I implemented systems for better management and communication with the product team. I introduced internal management systems for maintenance of styles, design assets, team member responsibilities and project organization. I also had a local version of the application and reviewed pull requests on Github (in respect to interactions and CSS), to streamline the review process. I took some time to create these processes to increase efficiency in the team dynamics and to have consistency control. The time with getTalent was rewarding in many respects. 
+			<p class="callout">
+				Collage of multiple images go here.
 			</p>
-
+			<p>
+				Aside from design responsibilities, I implemented systems for better management and communication with the product team. I introduced internal management systems for maintenance of styles, design assets, team member responsibilities and project organization. I also had a local version of the application and reviewed pull requests on Github (in respect to interactions and CSS), to streamline the review process. I took some time to create these processes to increase efficiency in the team dynamics and to have consistency control. The time with getTalent was rewarding in many respects.
+			</p>
 		</div>
 	</div>
 </div>
