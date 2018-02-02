@@ -12,6 +12,7 @@ end
 # Use postgresql and as the database for Active Record for production
 gem 'pg'
 gem 'rails_12factor'
+gem 'active_model_serializers'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
