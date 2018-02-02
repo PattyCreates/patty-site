@@ -104,6 +104,63 @@
 
     //Waypoints and animate.css
 
+    //getTalent
+    $('#collapseOne.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
+      e.stopPropagation();
+      $.waypoints('refresh');    
+      $('img.getTalentA').waypoint(function() {
+        $('img.getTalentA').addClass('animated fadeInLeft');
+      }, { offset: '75%' });
+      $('img.getTalentB').waypoint(function() {
+        $('img.getTalentB').addClass('animated fadeInUp');
+      }, { offset: '75%' });
+      $('img.getTalentC').waypoint(function() {
+        $('img.getTalentC').addClass('animated fadeInRight');
+      }, { offset: '75%' });
+      $('img.getTalentD').waypoint(function() {
+        $('img.getTalentD').addClass('animated fadeInLeft');
+      }, { offset: '75%' });
+      $('img.getTalentE').waypoint(function() {
+        $('img.getTalentE').addClass('animated fadeInRight');
+      }, { offset: '75%' });
+      $('img.getTalentF').waypoint(function() {
+        $('img.getTalentF').addClass('animated fadeInLeft');
+      }, { offset: '75%' });
+      $('img.getTalentG').waypoint(function() {
+        $('img.getTalentG').addClass('animated fadeInDown');
+      }, { offset: '75%' });
+      $('img.getTalentH').waypoint(function() {
+        $('img.getTalentH').addClass('animated fadeInLeft');
+      }, { offset: '75%' });
+      $('img.getTalentI').waypoint(function() {
+        $('img.getTalentI').addClass('animated fadeInRight');
+      }, { offset: '75%' });
+      $('img.getTalentJ').waypoint(function() {
+        $('img.getTalentJ').addClass('animated fadeInUp');
+      }, { offset: '75%' });
+      $('img.getTalentK').waypoint(function() {
+        $('img.getTalentK').addClass('animated fadeInDown');
+      }, { offset: '75%' });
+      $('img.getTalentL').waypoint(function() {
+        $('img.getTalentL').addClass('animated fadeInRight');
+      }, { offset: '75%' });
+      $('img.getTalentM').waypoint(function() {
+        $('img.getTalentM').addClass('animated fadeInLeft');
+      }, { offset: '75%' });
+      $('img.getTalentN').waypoint(function() {
+        $('img.getTalentN').addClass('animated fadeInUp');
+      }, { offset: '75%' });
+      $('img.getTalentO').waypoint(function() {
+        $('img.getTalentO').addClass('animated fadeInUp');
+      }, { offset: '75%' });
+      $('img.getTalentP').waypoint(function() {
+        $('img.getTalentP').addClass('animated fadeInDown');
+      }, { offset: '75%' });
+      $('img.getTalentQ').waypoint(function() {
+        $('img.getTalentQ').addClass('animated fadeInRight');
+      }, { offset: '75%' });
+    });
+
     //Appcelerator
     $('#collapseThree.collapse').on('shown.bs.collapse hidden.bs.collapse', function (e) {
       e.stopPropagation();
