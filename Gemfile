@@ -11,6 +11,7 @@ group :development, :test do
 end
 # Use postgresql and as the database for Active Record for production
 gem 'pg'
+gem 'rails_12factor'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
