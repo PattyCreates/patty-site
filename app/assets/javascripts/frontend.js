@@ -97,6 +97,12 @@
           scrollTop: (heightForPanel5),
         }, 350);
       });
+
+      $(".accordion-6").click(function() {
+        $('html, body').animate({
+          scrollTop: (heightForPanel6),
+        }, 350);
+      });
     };
 
     scrollTopOfAccordion();
