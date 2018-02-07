@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
 			<p class="company-description">
 				getTalent, a web recruiting software by Dice, is a lightweight ATS and a heavyweight CRM with marketing automation powers. 
 			</p>
@@ -24,10 +24,19 @@
 			<p>
 				Based off of their existing Material framework, I created a base style guide mini-site that the developers were able to import all SCSS variables and styles directly into the application. It was understood that the styles document would be malleable, so it was quite heavy in CSS modifiers and SCSS variables and mixins. I also created a component library including details such as loading states, facets, forms, blank states, animation states, and more.
 			</p>
+
+			<!-- mobile -->
+
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-component-library.png', class: "img-responsive", alt:"getTalent Component Library Screenshot - Pattycreates - UI / UX" %>
+			</div>
 		</div>
 	</div>
+
+	<!-- tablet and bigger -->
 	<div class="row group-vertical-margin hidden-xs">
-		<div class="col-xs-12 col-sm-6 col-md-3">
+		<div class="col-sm-6 col-md-3">
 			<%= image_tag 'getTalent/pattycreates-gettalent-styles.png', class: "getTalentA img-responsive work-dropshadow pull-right-15 top-image to-be-animated", alt:"getTalent Style Guidelines Screenshot - Pattycreates - UI / UX" %>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3">
@@ -37,6 +46,7 @@
 			<%= image_tag 'getTalent/pattycreates-gettalent-component-library.png', class: "getTalentC img-responsive work-dropshadow to-be-animated top-image", alt:"getTalent Component Library Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="col-sm-12 col-md-8 col-md-offset-2">
 			<hr>
@@ -66,7 +76,7 @@
 				The next main feature to redesign was the Create a Pipeline, which — at the time — had a very odd filtering interaction that wasn't clear to users. It was also inundated with several facets which made it overwhelming to filter quickly and efficiently.
 			</p>
 			<p>
-				We considered different types of logic but maintained that it was and filter logic for simplicity’s sake. So, the clear solution was to categorize the facets so a user can filter faster, easier, and more thoroughly.
+				We considered different types of logic but maintained that it was <em>and</em> filter logic for simplicity’s sake. So, the clear solution was to categorize the facets so a user can filter faster, easier, and more thoroughly.
 			</p>
 
 			<div class="browser-ui group-vertical-margin ">
@@ -77,20 +87,27 @@
 			<p>
 				The styles and categories from Create a Pipeline continued into the candidate profiles. The candidate profile had to support engagement metrics, resume support, and CRM abilities. The solution was to tab these pieces to fall in line with the global interaction of the site which was being built.
 			</p>
+
+			<!-- mobile -->
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-admin.png', class: "img-responsive", alt:"getTalent Candidate Profile Admin Screenshot - Pattycreates - UI / UX" %>
+			</div>
 		</div>
 	</div>
 
+	<!-- tablet and bigger -->
 	<div class="row group-vertical-margin hidden-xs">
-		<div class="col-xs-12 col-sm-6 col-md-5">
+		<div class="col-sm-6 col-md-5">
 			<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-resume.png', class: "getTalentD img-responsive work-dropshadow pull-right-5 to-be-animated  pull-down-15", alt:"getTalent Candidate Profile Resume Screenshot - Pattycreates - UI / UX" %>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-7">
+		<div class="col-sm-6 col-md-7">
 			<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-admin.png', class: "getTalentE img-responsive pull-left-5 work-dropshadow to-be-animated", alt:"getTalent Candidate Profile Admin Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
 			<hr>
 
 			<h4>Going Forward</h4>
@@ -106,16 +123,35 @@
 			</p>
 		</div>
 	</div>
-	<div class="row group-vertical-margin">
-		<div class="col-xs-12">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<br>
 			<h5 class="center">
 				Build an Email Campaign
 			</h5>
+
+			<!-- mobile -->
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-event-audience.png', class: "img-responsive", alt:"getTalent Campaign Wizard Audience Screenshot - Pattycreates - UI / UX" %>
+			</div>
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-event-review.png', class: "img-responsive", alt:"getTalent Campaign Wizard Review Screenshot - Pattycreates - UI / UX" %>
+			</div>
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-event-modal-send.png', class: "img-responsive", alt:"getTalent Campaign Wizard Modal Screenshot - Pattycreates - UI / UX" %>
+			</div>
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-campaign-overview.png', class: "img-responsive", alt:"getTalent Campaign Overview Screenshot - Pattycreates - UI / UX" %>
+			</div>
 		</div>
 	</div>
 
-
-	<div class="row group-vertical-margin">
+	<!-- tablet and bigger -->
+	<div class="row group-vertical-margin hidden-xs">
 		<div class="col-xs-12 col-sm-6 col-md-6">
 			<%= image_tag 'getTalent/pattycreates-gettalent-event-audience.png', class: "getTalentF img-responsive work-dropshadow to-be-animated top-image", alt:"getTalent Campaign Wizard Audience Screenshot - Pattycreates - UI / UX" %>
 		</div>
@@ -123,7 +159,7 @@
 			<%= image_tag 'getTalent/pattycreates-gettalent-event-build.png', class: "getTalentG img-responsive work-dropshadow to-be-animated top-image", alt:"getTalent Campaign Wizard Email Builder Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
-	<div class="row group-vertical-margin">
+	<div class="row group-vertical-margin hidden-xs">
 		<div class="col-xs-12 col-sm-6 col-md-6">
 			<%= image_tag 'getTalent/pattycreates-gettalent-event-review.png', class: "getTalentH img-responsive work-dropshadow to-be-animated top-image", alt:"getTalent Campaign Wizard Review Screenshot - Pattycreates - UI / UX" %>
 		</div>
@@ -131,13 +167,13 @@
 			<%= image_tag 'getTalent/pattycreates-gettalent-event-modal-send.png', class: "getTalentI img-responsive work-dropshadow to-be-animated", alt:"getTalent Campaign Wizard Modal Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
-	<div class="row hidden-sm">
-		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+	<div class="row hidden-xs hidden-sm">
+		<div class="col-md-8 col-md-offset-2">
 			<%= image_tag 'getTalent/pattycreates-gettalent-campaign-overview.png', class: "getTalentJ img-responsive work-dropshadow to-be-animated top-image pull-up-12", alt:"getTalent Campaign Overview Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
 
-	<div class="row group-vertical-margin">
+	<div class="row group-vertical-margin hidden-xs">
 		<div class="col-xs-12">
 			<br>
 			<h5 class="center">
@@ -145,16 +181,16 @@
 			</h5>
 			<br>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+		<div class="col-sm-6 col-md-5 col-md-offset-1">
 			<%= image_tag 'getTalent/pattycreates-gettalent-deduplication.png', class: "getTalentK img-responsive work-dropshadow pull-right-5 to-be-animated", alt:"getTalent Candidate Management Sample States Screenshot - Pattycreates - UI / UX" %>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-5">
+		<div class="col-sm-6 col-md-5">
 			<%= image_tag 'getTalent/pattycreates-gettalent-deduplication-samples.png', class: "getTalentL img-responsive work-dropshadow pull-left-5 pull-down-10 to-be-animated", alt:"getTalent Candidate Management Sample States Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
 
-	<!-- Mobile Images -->
-	<div class="row group-vertical-margin hidden-sm">
+	<!-- iOS getTalent App -->
+	<div class="row group-vertical-margin">
 		<div class="col-xs-12">
 			<br>
 			<h5 class="center">
@@ -162,20 +198,32 @@
 			</h5>
 		</div>
 	</div>
-	<div class="row group-vertical-margin hidden-sm">
-		<div class="col-xs-6 col-md-2 col-md-offset-1">
+
+	<!-- Mobile -->
+	<div class="row group-vertical-margin visible-xs">
+		<div class="col-xs-6">
+			<%= image_tag 'getTalent/pattycreates-gettalent-ios-contact.png', class: "img-responsive browser-ui", alt:"getTalent Candidate Profile iOS App Screenshot - Pattycreates - UI / UX" %>
+		</div>
+		<div class="col-xs-6">
+			<%= image_tag 'getTalent/pattycreates-gettalent-ios-edit-add.png', class: "img-responsive browser-ui", alt:"getTalent Candidate Profile iOS App Add New Screenshot - Pattycreates - UI / UX" %>
+		</div>
+	</div>
+	 
+	<!-- Desktop -->
+	<div class="row group-vertical-margin hidden-xs">
+		<div class="col-sm-3 col-md-2 col-md-offset-1">
 			<%= image_tag 'getTalent/pattycreates-gettalent-ios-contact.png', class: "getTalentM img-responsive work-dropshadow to-be-animated", alt:"getTalent Candidate Profile iOS App Screenshot - Pattycreates - UI / UX" %>
 		</div>
-		<div class="col-xs-6 col-md-2">
+		<div class="col-sm-3 col-md-2">
 			<%= image_tag 'getTalent/pattycreates-gettalent-ios-option.png', class: "getTalentN img-responsive work-dropshadow to-be-animated", alt:"getTalent Candidate Profile iOS App Option Screenshot - Pattycreates - UI / UX" %>
 		</div>
-		<div class="col-xs-6 col-md-2">
+		<div class="col-sm-3 col-md-2">
 			<%= image_tag 'getTalent/pattycreates-gettalent-ios-edit.png', class: "getTalentO img-responsive work-dropshadow to-be-animated", alt:"getTalent Candidate Profile iOS App Edit Screenshot - Pattycreates - UI / UX" %>
 		</div>
-		<div class="col-xs-6 col-md-2">
+		<div class="col-sm-3 col-md-2">
 			<%= image_tag 'getTalent/pattycreates-gettalent-ios-edit-add.png', class: "getTalentP img-responsive work-dropshadow to-be-animated", alt:"getTalent Candidate Profile iOS App Add New Screenshot - Pattycreates - UI / UX" %>
 		</div>
-		<div class="col-xs-6 col-md-2">
+		<div class="hidden-sm col-md-2">
 			<%= image_tag 'getTalent/pattycreates-gettalent-ios-confirmation.png', class: "getTalentQ img-responsive work-dropshadow to-be-animated", alt:"getTalent Candidate Profile iOS App Confirmation Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
