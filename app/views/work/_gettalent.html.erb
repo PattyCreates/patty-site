@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
 			<p class="company-description">
 				getTalent, a web recruiting software by Dice, is a lightweight ATS and a heavyweight CRM with marketing automation powers. 
 			</p>
@@ -24,13 +24,13 @@
 			<p>
 				Based off of their existing Material framework, I created a base style guide mini-site that the developers were able to import all SCSS variables and styles directly into the application. It was understood that the styles document would be malleable, so it was quite heavy in CSS modifiers and SCSS variables and mixins. I also created a component library including details such as loading states, facets, forms, blank states, animation states, and more.
 			</p>
-		</div>
-	</div>
-	
-	<!-- mobile -->
-	<div class="row group-vertical-margin visible-xs">
-		<div class="col-xs-12">
-			<%= image_tag 'getTalent/pattycreates-gettalent-component-library.png', class: "img-responsive", alt:"getTalent Component Library Screenshot - Pattycreates - UI / UX" %>
+
+			<!-- mobile -->
+
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-component-library.png', class: "img-responsive", alt:"getTalent Component Library Screenshot - Pattycreates - UI / UX" %>
+			</div>
 		</div>
 	</div>
 
@@ -87,13 +87,12 @@
 			<p>
 				The styles and categories from Create a Pipeline continued into the candidate profiles. The candidate profile had to support engagement metrics, resume support, and CRM abilities. The solution was to tab these pieces to fall in line with the global interaction of the site which was being built.
 			</p>
-		</div>
-	</div>
 
-	<!-- mobile -->
-	<div class="row group-vertical-margin visible-xs">
-		<div class="col-xs-12">
-			<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-admin.png', class: "img-responsive", alt:"getTalent Candidate Profile Admin Screenshot - Pattycreates - UI / UX" %>
+			<!-- mobile -->
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-candidate-profile-admin.png', class: "img-responsive", alt:"getTalent Candidate Profile Admin Screenshot - Pattycreates - UI / UX" %>
+			</div>
 		</div>
 	</div>
 
@@ -108,7 +107,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-sm-12 col-md-8 col-md-offset-2">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
 			<hr>
 
 			<h4>Going Forward</h4>
@@ -124,33 +123,30 @@
 			</p>
 		</div>
 	</div>
-	<div class="row group-vertical-margin">
-		<div class="col-xs-12">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<br>
 			<h5 class="center">
 				Build an Email Campaign
 			</h5>
-		</div>
-	</div>
 
-	<!-- mobile -->
-	<div class="row group-vertical-margin visible-xs">
-		<div class="col-xs-12">
-			<%= image_tag 'getTalent/pattycreates-gettalent-event-audience.png', class: "img-responsive", alt:"getTalent Campaign Wizard Audience Screenshot - Pattycreates - UI / UX" %>
-		</div>
-	</div>
-	<div class="row group-vertical-margin visible-xs">
-		<div class="col-xs-12">
-			<%= image_tag 'getTalent/pattycreates-gettalent-event-review.png', class: "img-responsive", alt:"getTalent Campaign Wizard Review Screenshot - Pattycreates - UI / UX" %>
-		</div>
-	</div>
-	<div class="row group-vertical-margin visible-xs">
-		<div class="col-xs-12">
-			<%= image_tag 'getTalent/pattycreates-gettalent-event-modal-send.png', class: "img-responsive", alt:"getTalent Campaign Wizard Modal Screenshot - Pattycreates - UI / UX" %>
-		</div>
-	</div>
-	<div class="row group-vertical-margin visible-xs">
-		<div class="col-xs-12">
-			<%= image_tag 'getTalent/pattycreates-gettalent-campaign-overview.png', class: "img-responsive", alt:"getTalent Campaign Overview Screenshot - Pattycreates - UI / UX" %>
+			<!-- mobile -->
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-event-audience.png', class: "img-responsive", alt:"getTalent Campaign Wizard Audience Screenshot - Pattycreates - UI / UX" %>
+			</div>
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-event-review.png', class: "img-responsive", alt:"getTalent Campaign Wizard Review Screenshot - Pattycreates - UI / UX" %>
+			</div>
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-event-modal-send.png', class: "img-responsive", alt:"getTalent Campaign Wizard Modal Screenshot - Pattycreates - UI / UX" %>
+			</div>
+			<div class="browser-ui group-vertical-margin visible-xs">
+				<%= render partial: "partials/browser_circles" %>
+				<%= image_tag 'getTalent/pattycreates-gettalent-campaign-overview.png', class: "img-responsive", alt:"getTalent Campaign Overview Screenshot - Pattycreates - UI / UX" %>
+			</div>
 		</div>
 	</div>
 
