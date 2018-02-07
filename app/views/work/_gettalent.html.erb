@@ -26,8 +26,17 @@
 			</p>
 		</div>
 	</div>
-	<div class="row group-vertical-margin">
-		<div class="col-xs-12 col-sm-6 col-md-3">
+	
+	<!-- mobile -->
+	<div class="row group-vertical-margin visible-xs">
+		<div class="col-xs-12">
+			<%= image_tag 'getTalent/pattycreates-gettalent-component-library.png', class: "img-responsive", alt:"getTalent Component Library Screenshot - Pattycreates - UI / UX" %>
+		</div>
+	</div>
+
+	<!-- tablet and bigger -->
+	<div class="row group-vertical-margin hidden-xs">
+		<div class="col-sm-6 col-md-3">
 			<%= image_tag 'getTalent/pattycreates-gettalent-styles.png', class: "getTalentA img-responsive work-dropshadow pull-right-15 top-image to-be-animated", alt:"getTalent Style Guidelines Screenshot - Pattycreates - UI / UX" %>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3">
@@ -37,6 +46,7 @@
 			<%= image_tag 'getTalent/pattycreates-gettalent-component-library.png', class: "getTalentC img-responsive work-dropshadow to-be-animated top-image", alt:"getTalent Component Library Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="col-sm-12 col-md-8 col-md-offset-2">
 			<hr>
@@ -66,7 +76,7 @@
 				The next main feature to redesign was the Create a Pipeline, which — at the time — had a very odd filtering interaction that wasn't clear to users. It was also inundated with several facets which made it overwhelming to filter quickly and efficiently.
 			</p>
 			<p>
-				We considered different types of logic but maintained that it was and filter logic for simplicity’s sake. So, the clear solution was to categorize the facets so a user can filter faster, easier, and more thoroughly.
+				We considered different types of logic but maintained that it was <em>and</em> filter logic for simplicity’s sake. So, the clear solution was to categorize the facets so a user can filter faster, easier, and more thoroughly.
 			</p>
 
 			<div class="browser-ui group-vertical-margin ">
@@ -153,7 +163,7 @@
 			<%= image_tag 'getTalent/pattycreates-gettalent-event-modal-send.png', class: "getTalentI img-responsive work-dropshadow to-be-animated", alt:"getTalent Campaign Wizard Modal Screenshot - Pattycreates - UI / UX" %>
 		</div>
 	</div>
-	<div class="row visible-md">
+	<div class="row hidden-xs hidden-sm">
 		<div class="col-md-8 col-md-offset-2">
 			<%= image_tag 'getTalent/pattycreates-gettalent-campaign-overview.png', class: "getTalentJ img-responsive work-dropshadow to-be-animated top-image pull-up-12", alt:"getTalent Campaign Overview Screenshot - Pattycreates - UI / UX" %>
 		</div>
